@@ -19,3 +19,10 @@ h6 {
   font-family: "Sofia Sans Extra Condensed", serif;
   font-weight: 700;
 }
+
+.bg-cover {
+  background-image: url("/src/assets/images/cover.jpeg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
