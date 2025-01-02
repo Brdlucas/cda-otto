@@ -1,0 +1,9 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "php": "html",
+    "jsx": "html",
+    "tsx": "html",
+    "twig": "html"
+  }
+}
