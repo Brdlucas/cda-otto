@@ -22,8 +22,8 @@ $categorieVoitures = json_decode(file_get_contents(__DIR__ . '/../data/cars.json
             hover:to-black hover:from-transparent bottom-0">
             <div class="bottom-0 absolute p-3 text-white">
                 <h3><?= $voiture['nom'] ?></h3>
-                <p>portes</p>
-                <p>engine</p>
+                <p><?= $voiture['nombre_de_portes'] ?> portes</p>
+                <p><?= $voiture['energie_du_moteur'] ?></p>
                 <p><?= $voiture['prix'] ?>€ /jour</p>
             </div>
         </div>
