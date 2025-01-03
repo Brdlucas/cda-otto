@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     // Redirection 
-    header('Location: ../../home.php');
+    header('Location: /../../home.php');
 } else {
-    header('Location: /');
+    header('Location: /../../home.php');
 }
