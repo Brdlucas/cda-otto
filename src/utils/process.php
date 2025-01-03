@@ -1,5 +1,5 @@
 <?php
-
+var_dump($data);
 /**
  * Liste des véhicules
  * Tableau associatif avec les clés :
@@ -138,10 +138,6 @@ $categorieVoitures = [
  * @param array $categories La liste des véhicules
  * @return array Les véhicules correspondant au type
  */
-function choixDuType(string $type, array $categories)
-{
-    return $categories[$type] ?? []; // Vérifier si le type existe
-}
 
 /**
  * Traitement du formulaire
@@ -158,10 +154,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'telephone' => $_POST['telephone'] ?? '',
     ];
 
-    foreach ($_POST as $key) {
+    foreach ($_POST as $key => $value) {
         if (!in_array($key, array_keys($data))) {
             $data['type'] = $key;
-            $data['vehicles'] = choixDuType($key, $categorieVoitures);
+            $data['vehicles'] = $categorieVoitures[$key] ?? '';
         }
     }
 
@@ -173,7 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     // Redirection 
-    header('Location: index.php');
+    header('Location: ../../home.php');
 } else {
-    header('Location: index.php');
+    header('Location: /');
 }
