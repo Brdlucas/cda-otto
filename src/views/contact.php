@@ -111,6 +111,11 @@
                         <textarea id="message" name="message" rows="4" required
                             class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
                     </div>
+                    <div>
+                        <input type="checkbox" name="'rgpd" id="">
+                        <label for="rgpd" class="" text-sm>J'accepte la <a href="#">politique de traitement des données
+                                personelles</a>de CDA OTTA</label>
+                    </div>
 
                     <button type="submit"
                         class="w-full py-3 px-4 bg-gradient-to-r from-red-600 to-amber-600 text-white rounded-md hover:shadow-lg transition-shadow">
