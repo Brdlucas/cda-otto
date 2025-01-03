@@ -7,9 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'prenom' => $_POST['prenom'] ?? '',
         'sujet' => $_POST['sujet'] ?? '',
         'message' => $_POST['message'] ?? '',
+        'rgpd' => $_POST['rgpd'] ?? '',
     ];
 
-    header('Location: ../../home.php');
+    var_dump($data);;
+    die();
+
+    header('Location: /../../home.php');
 } else {
-    header('Location: /');
+    header('Location: /../../home.php');
 }
