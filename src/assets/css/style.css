@@ -26,3 +26,10 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.bg-cover-cars {
+  background-image: url("/src/assets/images/cover-cars.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
